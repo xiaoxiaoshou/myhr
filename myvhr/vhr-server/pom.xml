@@ -11,6 +11,8 @@
     <groupId>com.dpf.myvhr</groupId>
     <artifactId>vhr-server</artifactId>
 
+
+
     <modules>
         <module>vhr-mapper</module>
         <module>vhr-model</module>

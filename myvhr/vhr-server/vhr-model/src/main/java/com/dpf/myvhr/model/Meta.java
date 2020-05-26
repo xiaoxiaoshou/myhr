@@ -1,11 +1,13 @@
 package com.dpf.myvhr.model;
 
+import java.io.Serializable;
+
 /**
  * @author dpf
  * @create 2020-04-14 19:04
  * @email 446933040@qq.com
  */
-public class Meta {
+public class Meta implements Serializable {
 
     private Boolean keepAlive;
 

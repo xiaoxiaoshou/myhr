@@ -1,9 +1,10 @@
 package com.dpf.myvhr.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class JobLevel {
+public class JobLevel implements Serializable {
     private Integer id;
 
     private String name;
