@@ -2,10 +2,9 @@ package com.dpf.myvhr.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class Salary implements Serializable {
+public class Salary {
     private Integer id;
 
     private Integer basicSalary;

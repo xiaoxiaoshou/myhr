@@ -1,9 +1,8 @@
 package com.dpf.myvhr.model;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class Menu implements Serializable {
+public class Menu {
     private Integer id;
 
     private String url;

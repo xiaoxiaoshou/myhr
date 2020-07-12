@@ -1,9 +1,8 @@
 package com.dpf.myvhr.model;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-public class Politicsstatus implements Serializable {
+public class Politicsstatus {
     private Integer id;
 
     private String name;

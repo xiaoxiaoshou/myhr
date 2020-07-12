@@ -2,10 +2,9 @@ package com.dpf.myvhr.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class Employee implements Serializable {
+public class Employee {
 
     @Override
     public String toString() {
