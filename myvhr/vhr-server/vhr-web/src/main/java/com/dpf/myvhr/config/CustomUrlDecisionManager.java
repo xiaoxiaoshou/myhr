@@ -12,16 +12,16 @@ import org.springframework.stereotype.Component;
 import java.util.Collection;
 
 /**
+ * 授权决策管理器：登录的某个用户是否有对应权限
  * @author dpf
  * @create 2020-04-16 12:56
  * @email 446933040@qq.com
  */
 @Component
-public class MyAccessDecisionManager implements AccessDecisionManager {
-
+public class CustomUrlDecisionManager implements AccessDecisionManager {
 
     /**
-     *  判断是否拥有权限的决策方法,该方法没有抛异常说明有权限
+     * 判断是否拥有权限的决策方法,该方法没有抛异常说明有权限
      * @param authentication
      * @param o          包含客户端发起的请求的requset信息,可转换为 HttpServletRequest request = ((FilterInvocation) o).getHttpRequest();
      * @param collection 过滤器传过来的许可角色
