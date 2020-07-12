@@ -13,9 +13,9 @@ public class MailServerApplication {
         SpringApplication.run(MailServerApplication.class, args);
     }
 
-//    @Bean
-//    Queue queue() {
-//        return new Queue(MailConstants.MAIL_QUEUE_NAME);
-//    }
+    @Bean
+    Queue queue() {
+        return new Queue(MailConstants.MAIL_QUEUE_NAME);
+    }
 
 }

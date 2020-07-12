@@ -1,9 +1,8 @@
 package com.dpf.myvhr.model;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-public class Nation implements Serializable {
+public class Nation {
     private Integer id;
 
     private String name;

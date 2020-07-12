@@ -24,7 +24,7 @@ import java.util.List;
  *
  */
 @Component
-public class MyFilter implements FilterInvocationSecurityMetadataSource {
+public class CustomFilterInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
 
     AntPathMatcher pathMatcher = new AntPathMatcher();
 

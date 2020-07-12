@@ -1,8 +1,6 @@
 package com.dpf.myvhr.model;
 
-import java.io.Serializable;
-
-public class Role implements Serializable {
+public class Role {
     private Integer id;
 
     private String name;
