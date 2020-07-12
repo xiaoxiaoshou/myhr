@@ -43,10 +43,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     HrService hrService;
 
     @Autowired
-    MyAccessDecisionManager myAccessDecisionManager;
+    CustomFilterInvocationSecurityMetadataSource customFilterInvocationSecurityMetadataSource;
 
     @Autowired
-    MyFilter myFilter;
+    CustomUrlDecisionManager customUrlDecisionManager;
 
     @Bean
     PasswordEncoder passwordEncoder(){
@@ -126,8 +126,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                  .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                      @Override
                      public <O extends FilterSecurityInterceptor> O postProcess(O o) {
-                         o.setAccessDecisionManager(myAccessDecisionManager);
-                         o.setSecurityMetadataSource(myFilter);
+                         o.setAccessDecisionManager(customUrlDecisionManager);
+                         o.setSecurityMetadataSource(customFilterInvocationSecurityMetadataSource);
                          return o;
                      }
                  })
