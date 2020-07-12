@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "babel-loader": "^7.1.5",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",
+    "node-libs-browser": "^2.2.1",
+    "timers-browserify": "^2.0.11",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.3"
@@ -19,10 +22,13 @@
     "@vue/cli-plugin-router": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
     "font-awesome": "^4.7.0",
+    "sockjs-client": "^1.4.0",
+    "stompjs": "^2.3.3",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "stompjs": "^2.3.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0"
   },
   "browserslist": [
     "> 1%",
